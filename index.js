@@ -41,7 +41,7 @@ async function disconnectClient() {
   await client.disconnect();
 }
 
-async function getMessages(limit = 1) {
+async function getMessages(limit = 10) {
   const entity = await client.getEntity('Chollometro');
   const result = await client.invoke(
     new Api.messages.GetHistory({
