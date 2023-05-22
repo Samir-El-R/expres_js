@@ -1,0 +1,3 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "public" # El directorio de salida de tu aplicación Express.js
