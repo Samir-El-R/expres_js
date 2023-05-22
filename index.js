@@ -6,7 +6,7 @@ const { LocalStorage } = require('node-localstorage');
 const input = require("input");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(cors());
 const apiId = 25645694;
 const apiHash = '71da3b4add888a833442d47b606330cb';
